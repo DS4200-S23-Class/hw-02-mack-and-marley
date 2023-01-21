@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html> 
-
+<style>
+    table {
+        border: 1px solid black;
+    }
+</style>
 <head>
     <meta charset=utf-8/>
-    <title>ic-02</title>
+    <title>hw-02</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,7 +17,7 @@
         <div class="info">
         <h1 class="centered">Dataset Types</h1>
             <table style="width:100%">
-                <tr>
+                <tr id="first-row">
                     <th id="row-names">Data</th>
                     <th id="row-names">Link</th>
                     <th id="row-names">Dataset Type</th>
@@ -36,10 +40,55 @@
             </table>
         </div>
         <div class="info">
+            <h1 class="centered">Data Types</h1>
+            <h2>UFO</h2>
+            <ul>
+                <li>Row data type: ITEM</li>
+                <li>Column data type: ATTRIBUTE, QUANTITATIVE CYCLIC</li>
+                <li>Column data type: ATTRIBUTE, CATEGORICAL</li>
+                <li>Column data type: ATTRIBUTE, CATEGORICAL</li>
+                <li>Column data type: ATTRIBUTE, CATEGORICAL</li>
+                <li>Column data type: ATTRIBUTE, QUANTITATIVE SEQUENTIAL</li>
+            </ul>
 
-    //x
+            <h2>Google-Web</h2>
+            <ul>
+                <li>Row data type: LINK</li>
+                <li>Column data type: ATTRIBUTE: CATEGORICAL</li>
+                <li>Column data type: ATTRIBUTE: CATEGORICAL</li>
+            </ul>
+
+            <h2>Airports</h2>
+            <ul>
+                <li>Row data type: ITEM</li>
+                <li>Column data type: ATTRIBUTE: CATEGORICAL</li>
+                <li>Column data type: POSITION</li>                
+                <li>Column data type: POSITION</li>                
         </div>
     </div>
+
+    <div id="task-abstraction">
+        <h1 class="centered">Task Abstraction</h1>
+        <ul class="flex-container">
+            <li> 
+                <img src="vis1.png" alt="First image">
+            </li>
+            <li>
+                <img src="vis2.png" alt="Second image">
+            </li>
+        </ul>
+    </div>
+
+    <div id="decoration">
+        <svg width="100" height="100">
+            <rect width="400" height ="400" style="fill:rgb(0,255,0);stroke-width:10;stroke:rgb(0,0,0)" />
+        </svg>
+    </div>
+
+
+
+
+
 
 
 
