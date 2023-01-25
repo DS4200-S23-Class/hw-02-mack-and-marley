@@ -16,7 +16,7 @@
     <div id="data-abstraction">
         <div class="info">
         <h1 class="centered">Dataset Types</h1>
-            <table style="width:100%">
+            <table class="table">
                 <tr id="first-row">
                     <th id="row-names">Data</th>
                     <th id="row-names">Link</th>
@@ -35,7 +35,7 @@
                 <tr>
                     <th>Airports</th>
                     <th><a href="data/Airports.csv">link</a></th>
-                    <th>Table</th>
+                    <th>Geometry</th>
                 </tr>
             </table>
         </div>
@@ -43,27 +43,36 @@
             <h1 class="centered">Data Types</h1>
             <h2>UFO</h2>
             <ul>
-                <li>Row data type: ITEM</li>
-                <li>Column data type: ATTRIBUTE, QUANTITATIVE CYCLIC</li>
-                <li>Column data type: ATTRIBUTE, CATEGORICAL</li>
-                <li>Column data type: ATTRIBUTE, CATEGORICAL</li>
-                <li>Column data type: ATTRIBUTE, CATEGORICAL</li>
-                <li>Column data type: ATTRIBUTE, QUANTITATIVE SEQUENTIAL</li>
+                <li>Row data type: item</li>
+                <li>Column data type: attribute</li>
+                <ul>
+                    <li>datetime: quantitative sequential</li>
+                    <li>city: nominal categorical</li>
+                    <li>state: nominal catigorical</li>
+                    <li>country: nominal catigorical</li>
+                    <li>shape: nominal categorical</li>
+                    <li>duration: quantitative sequential</li>
+                </ul>
             </ul>
 
             <h2>Google-Web</h2>
             <ul>
-                <li>Row data type: LINK</li>
-                <li>Column data type: ATTRIBUTE: CATEGORICAL</li>
-                <li>Column data type: ATTRIBUTE: CATEGORICAL</li>
+                <li>Row data type: item</li>
+                <li>Column data type: link</li>
+        
             </ul>
 
             <h2>Airports</h2>
             <ul>
-                <li>Row data type: ITEM</li>
-                <li>Column data type: ATTRIBUTE: CATEGORICAL</li>
-                <li>Column data type: POSITION</li>                
-                <li>Column data type: POSITION</li>                
+                <li>Row data type: item</li>
+                <li>Column data type: attribute</li>
+                <ul>
+                    <li>airport_name: norminal categorical</li>  
+                </ul>
+                
+                <li>latitude: position</li>                
+                <li>longitude: position</li> 
+                </li>             
         </div>
     </div>
 
@@ -72,39 +81,52 @@
         <div class="flex-container">
             <div class="item"> 
                 <img src="img/vis1.png" alt="First image">
-                <p class="subtext">High: Consume -> Discover</p>
-                <p class="subtext">Middle: Search -> Lookup</p>
-                <p class="subtext">Low: Query -> Identify</p>
-                <p class="subtext">Targets: All Data -> Trends</p>
+                <p class="subtext">High: Consume -> Discover because the user can compare the last three days of weather to overall trends</p>
+                <p class="subtext">Middle: Search -> Lookup because the location (Vancover) and target (last 3 days) are known</p>
+                <p class="subtext">Low: Query -> Identify because 3 data points are highlighted</p>
+                <p class="subtext">Target: Outliers because the graph shows how recent weather is more extreme than the trend over time </p>
 
             </div>
             <div class="item">
                 <img src="img/vis2.png" alt="Second image">
-                <p class="subtext">High: Consume -> Present</p>
-                <p class="subtext">Middle: Search -> Browse</p>
-                <p class="subtext">Low: Query -> Compare</p>
-                <p class="subtext">Targets: All Data -> Outliers</p>
+                <p class="subtext">High: Consume -> Present because the data is currated to send a specific message</p>
+                <p class="subtext">Middle: Search -> Browse because the location (Seattle and Portland) are known but the target is not</p>
+                <p class="subtext">Low: Query -> Compare because weather in Seattle and Portland are juxtaposed</p>
+                <p class="subtext">Target: Similarity because two relatively close locations are being compared</p>
 
             </div>
         </div>
     </div>
     <div id="decoration">
-        <svg width="1440" height="120">
-            <rect class="rect" width="100" height="100" x="10" y = "10"/>
-            <circle class="circle" r="50" cx="170" cy="60"/> 
-            <rect class="rect" width="100" height="100" x="230" y = "10"/>
-            <circle class="circle" r="50" cx="390" cy="60"/> 
-            <rect class="rect" width="100" height="100" x="450" y = "10"/>
-            <circle class="circle" r="50" cx="610" cy="60"/> 
-            <rect class="rect" width="100" height="100" x="670" y = "10"/>
-            <circle class="circle" r="50" cx="830" cy="60"/> 
-            <rect class="rect" width="100" height="100" x="890" y = "10"/>
-            <circle class="circle" r="50" cx="1050" cy="60"/> 
-            <rect class="rect" width="100" height="100" x="1110" y = "10"/>
-            <circle class="circle" r="50" cx="1270" cy="60"/> 
-            <rect class="rect" width="100" height="100" x="1330" y = "10"/>
-
-        </svg>
+        <div class="flex-container">
+            <div class="item">
+                <svg class ="rec" width="1440" height="120">
+                    <rect width="100" height="100" x="50" y = "10"/>
+                </svg>
+            </div>
+            <div class="item">
+                <svg class="cir"width="1440" height="120">
+                    <circle class="circle" r="50" cx="50" cy="50"/> 
+                </svg> 
+            </div>
+            <div class="item">
+                <svg class="rec" width="1440" height="120">
+                    <rect class="rect" width="100" height="100" x="50" y = "10"/>
+                </svg>
+            </div>
+             <div class="item">
+                <svg class ="cir" width="1440" height="120">
+                    <circle class="circle" r="50" cx="50" cy="50"/> 
+                </svg>
+            </div>
+            <div class="item">
+                <svg class="rec" width="1440" height="120">
+                    <rect class="rect" width="100" height="100" x="50" y = "10"/>
+                </svg>
+            </div>
+                            
+          
+        </div>
             
     </div>
     <h1 class="centered">Acknowledgements</h1>
