@@ -1,16 +1,18 @@
+/*body related styling*/
 body {
 	font-family: Arial;
 }
 
 .centered {
 	text-align: center;
-
 }
 
+/*table related styling*/
 .table {
 	width: 100%;
 	margin-left:10px;
 	margin-right:80px;
+	border: 1px solid;
 }
 
 #row-names {
@@ -22,12 +24,11 @@ body {
 }
 
 
+/*styling for flex container and items/images */
 .flex-container {
 	margin: 15px;
   	display: flex;
   	justify-content: space-between;
-
-
 }
 
 .item{
@@ -44,14 +45,14 @@ img{
 	width: 100%;
 }
 
-
+/*styling for text below images in flexbox*/
 .subtext{
 	color: darkgreen;
 	text-align: left;
 }
 
 
-
+/*styling for shapes and changes when the mouse hovers*/
 .cir {
 	opacity: 50%;
 	fill: darkred;
@@ -80,6 +81,7 @@ svg{
   width: 100%;
 }
 
+/*spaces div content evenly*/
 div{
 	justify-content: space-evenly;
 }
