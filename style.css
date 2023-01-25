@@ -3,13 +3,30 @@ body {
 }
 
 .flex-container {
-	display: flex;
-	align-items: center;
-	flex-wrap: nowrap;
+	margin: 15px;
+  	display: flex;
+  	justify-content: space-between;
+
+
 }
 
 .item{
-	align-self: center;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+
+
+	
+}
+
+img{
+	object-fit: cover;
+	width: 100%;
+}
+
+
+.subtext{
 	color: darkgreen;
 	text-align: left;
 }
@@ -21,6 +38,49 @@ body {
 	text-align: center;
 
 }
+
+
+
+.circle {
+	opacity: 50%;
+	fill: darkred;
+	radius: 50;
+	cy: 60;
+	margin: 0 auto;
+}
+
+.rect {
+	fill: seagreen;
+	stroke: black;
+	stroke-width: 10;
+	/*width: 100;
+	height: 100;
+	y: 10;*/
+	margin: 0 auto;
+
+}
+
+circle:hover {
+	stroke: black;
+	stroke-width: 5;
+}
+
+rect:hover {
+	fill: black;
+}
+svg{
+  width: 100%;
+}
+
+div{
+	justify-content: space-evenly;
+}
+
+
+
+
+
+
 #row-names {
 	color: blue;
 }
@@ -28,3 +88,7 @@ body {
 #first-row {
 	background-color:lightskyblue;
 }
+
+
+
+
